@@ -1,0 +1,1488 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #1a202c; color: white; padding: 20px; text-align: center; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .gallery-item { background: #2d3748; padding: 15px; border-radius: 8px; }
+        img { max-width: 100%; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        h1 { margin-bottom: 40px; }
+        p { font-size: 14px; margin-top: 10px; word-break: break-all; color: #a0aec0; }
+        .filters { margin-bottom: 30px; }
+        button { background: #4a5568; color: white; border: none; padding: 10px 15px; margin: 0 5px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #2b6cb0; }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens (/imagens)</h1>
+    <div class="filters">
+        <button onclick="filter('all')">Todas</button>
+        <button onclick="filter('generated')">Geradas por IA (Sem Uploads)</button>
+    </div>
+    <div class="gallery">
+
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772720959788.png" loading="lazy">
+            <p>media__1772720959788.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/amarelacore_404_error_1769380273844.png" loading="lazy">
+            <p>amarelacore_404_error_1769380273844.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772603773793.png" loading="lazy">
+            <p>uploaded_image_1772603773793.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772602563202.png" loading="lazy">
+            <p>uploaded_image_1772602563202.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772602171941.png" loading="lazy">
+            <p>uploaded_image_1772602171941.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772601725847.png" loading="lazy">
+            <p>uploaded_image_1772601725847.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_top_1772601205408.png" loading="lazy">
+            <p>mobile_top_1772601205408.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_scrolled_1772601255043.png" loading="lazy">
+            <p>mobile_scrolled_1772601255043.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_layout_lumiview_1772599239785.png" loading="lazy">
+            <p>mobile_layout_lumiview_1772599239785.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_hero_final_1772601544038.png" loading="lazy">
+            <p>mobile_hero_final_1772601544038.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/mobile_hero_check_1772601970349.png" loading="lazy">
+            <p>mobile_hero_check_1772601970349.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_hero_1772599932737.png" loading="lazy">
+            <p>mobile_hero_1772599932737.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mobile_features_1772599987555.png" loading="lazy">
+            <p>mobile_features_1772599987555.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_new_mobile_1772603303745.png" loading="lazy">
+            <p>hero_new_mobile_1772603303745.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_new_desktop_1772603100186.png" loading="lazy">
+            <p>hero_new_desktop_1772603100186.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_mask_mobile_1772604000124.png" loading="lazy">
+            <p>hero_mask_mobile_1772604000124.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_mask_desktop_1772603999339.png" loading="lazy">
+            <p>hero_mask_desktop_1772603999339.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_3d_mobile_1772602471268.png" loading="lazy">
+            <p>hero_3d_mobile_1772602471268.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/hero_3d_desktop_1772602407847.png" loading="lazy">
+            <p>hero_3d_desktop_1772602407847.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/desktop_hero_check_1772601909907.png" loading="lazy">
+            <p>desktop_hero_check_1772601909907.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/desktop_hero_1772599786181.png" loading="lazy">
+            <p>desktop_hero_1772599786181.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767858254837.png" loading="lazy">
+            <p>uploaded_image_1767858254837.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/product_page_scroll_1767856573440.png" loading="lazy">
+            <p>product_page_scroll_1767856573440.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/product_page_blue_1767859567505.png" loading="lazy">
+            <p>product_page_blue_1767859567505.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/product_page_azul_1767859732233.png" loading="lazy">
+            <p>product_page_azul_1767859732233.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/description_part_3_1767856780655.png" loading="lazy">
+            <p>description_part_3_1767856780655.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/description_part_2_1767856733303.png" loading="lazy">
+            <p>description_part_2_1767856733303.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/after_buy_now_1767856707343.png" loading="lazy">
+            <p>after_buy_now_1767856707343.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771974831493.png" loading="lazy">
+            <p>uploaded_image_1771974831493.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771974791830.png" loading="lazy">
+            <p>uploaded_image_1771974791830.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769034233845.png" loading="lazy">
+            <p>uploaded_image_1769034233845.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768397201576.png" loading="lazy">
+            <p>uploaded_image_1768397201576.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768397109397.png" loading="lazy">
+            <p>uploaded_image_1768397109397.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768397019518.png" loading="lazy">
+            <p>uploaded_image_1768397019518.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768396617330.png" loading="lazy">
+            <p>uploaded_image_1768396617330.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765553086867.png" loading="lazy">
+            <p>uploaded_image_1765553086867.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1767096166960.png" loading="lazy">
+            <p>uploaded_image_1_1767096166960.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767096029072.png" loading="lazy">
+            <p>uploaded_image_1767096029072.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767095700620.png" loading="lazy">
+            <p>uploaded_image_1767095700620.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767095312285.png" loading="lazy">
+            <p>uploaded_image_1767095312285.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1767096166960.png" loading="lazy">
+            <p>uploaded_image_0_1767096166960.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772129456800.png" loading="lazy">
+            <p>uploaded_image_1772129456800.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_3_1772486237561.png" loading="lazy">
+            <p>uploaded_image_3_1772486237561.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_2_1772486237561.png" loading="lazy">
+            <p>uploaded_image_2_1772486237561.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1772486848675.png" loading="lazy">
+            <p>uploaded_image_1_1772486848675.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1772486237561.png" loading="lazy">
+            <p>uploaded_image_1_1772486237561.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1772486848675.png" loading="lazy">
+            <p>uploaded_image_0_1772486848675.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1772486237561.png" loading="lazy">
+            <p>uploaded_image_0_1772486237561.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/top_mobile_view_1772487103529.png" loading="lazy">
+            <p>top_mobile_view_1772487103529.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_landing_page_1772485861358.png" loading="lazy">
+            <p>tai_chi_landing_page_1772485861358.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/section_500_check_1772488148483.png" loading="lazy">
+            <p>section_500_check_1772488148483.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/product_mobile_view_1772487154146.png" loading="lazy">
+            <p>product_mobile_view_1772487154146.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/open_book_check_mobile_1772488070063.png" loading="lazy">
+            <p>open_book_check_mobile_1772488070063.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/open_book_check_final_1772488239059.png" loading="lazy">
+            <p>open_book_check_final_1772488239059.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/middle_mobile_view_fixed_1772487777889.png" loading="lazy">
+            <p>middle_mobile_view_fixed_1772487777889.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/contact_page_verification_1772488368266.png" loading="lazy">
+            <p>contact_page_verification_1772488368266.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/books_mobile_check_1772487848996.png" loading="lazy">
+            <p>books_mobile_check_1772487848996.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/airfryer_mobile_view_1772486429846.png" loading="lazy">
+            <p>airfryer_mobile_view_1772486429846.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/airfryer_mobile_middle_1772486459687.png" loading="lazy">
+            <p>airfryer_mobile_middle_1772486459687.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/airfryer_mobile_button_1772486524089.png" loading="lazy">
+            <p>airfryer_mobile_button_1772486524089.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/above_books_mobile_1772487930085.png" loading="lazy">
+            <p>above_books_mobile_1772487930085.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/jobquest_bottom_page_1768398139640.png" loading="lazy">
+            <p>jobquest_bottom_page_1768398139640.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767019339707.png" loading="lazy">
+            <p>uploaded_image_1767019339707.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767019301625.png" loading="lazy">
+            <p>uploaded_image_1767019301625.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767018846532.png" loading="lazy">
+            <p>uploaded_image_1767018846532.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767018819772.png" loading="lazy">
+            <p>uploaded_image_1767018819772.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767016017848.png" loading="lazy">
+            <p>uploaded_image_1767016017848.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767015597677.png" loading="lazy">
+            <p>uploaded_image_1767015597677.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767015264886.png" loading="lazy">
+            <p>uploaded_image_1767015264886.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767014854469.png" loading="lazy">
+            <p>uploaded_image_1767014854469.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767014735666.png" loading="lazy">
+            <p>uploaded_image_1767014735666.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767014238892.png" loading="lazy">
+            <p>uploaded_image_1767014238892.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769357653888.png" loading="lazy">
+            <p>uploaded_image_1769357653888.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769357035711.png" loading="lazy">
+            <p>uploaded_image_1769357035711.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768310466280.png" loading="lazy">
+            <p>uploaded_image_1768310466280.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/server_landing_page_1768310387091.png" loading="lazy">
+            <p>server_landing_page_1768310387091.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/windows_fixed_1772335125315.png" loading="lazy">
+            <p>windows_fixed_1772335125315.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/windows_countdown_1772334885847.png" loading="lazy">
+            <p>windows_countdown_1772334885847.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772334517417.png" loading="lazy">
+            <p>uploaded_image_1772334517417.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/taichi_fixed_1772335098404.png" loading="lazy">
+            <p>taichi_fixed_1772335098404.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/taichi_countdown_1772334918718.png" loading="lazy">
+            <p>taichi_countdown_1772334918718.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mediterraneo_fixed_1772335166401.png" loading="lazy">
+            <p>mediterraneo_fixed_1772335166401.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mediterraneo_countdown_1772334865585.png" loading="lazy">
+            <p>mediterraneo_countdown_1772334865585.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/mediterranean_project_page_1772330890329.png" loading="lazy">
+            <p>mediterranean_project_page_1772330890329.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/diabetic_diet_page_confirmation_1772333391010.png" loading="lazy">
+            <p>diabetic_diet_page_confirmation_1772333391010.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/countdown_bar_fix_verification_1772334769601.png" loading="lazy">
+            <p>countdown_bar_fix_verification_1772334769601.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/airfryer_timer_check_1772341937602.png" loading="lazy">
+            <p>airfryer_timer_check_1772341937602.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_4_1767850696764.png" loading="lazy">
+            <p>uploaded_image_4_1767850696764.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_3_1767853588945.png" loading="lazy">
+            <p>uploaded_image_3_1767853588945.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_3_1767853347010.png" loading="lazy">
+            <p>uploaded_image_3_1767853347010.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_3_1767850696764.png" loading="lazy">
+            <p>uploaded_image_3_1767850696764.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_2_1767853588945.png" loading="lazy">
+            <p>uploaded_image_2_1767853588945.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_2_1767853347010.png" loading="lazy">
+            <p>uploaded_image_2_1767853347010.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_2_1767850696764.png" loading="lazy">
+            <p>uploaded_image_2_1767850696764.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1767853588945.png" loading="lazy">
+            <p>uploaded_image_1_1767853588945.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1767853347010.png" loading="lazy">
+            <p>uploaded_image_1_1767853347010.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1767850696764.png" loading="lazy">
+            <p>uploaded_image_1_1767850696764.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767853630877.png" loading="lazy">
+            <p>uploaded_image_1767853630877.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767853455603.png" loading="lazy">
+            <p>uploaded_image_1767853455603.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767853250785.png" loading="lazy">
+            <p>uploaded_image_1767853250785.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767852295344.png" loading="lazy">
+            <p>uploaded_image_1767852295344.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767850385660.png" loading="lazy">
+            <p>uploaded_image_1767850385660.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767849209638.png" loading="lazy">
+            <p>uploaded_image_1767849209638.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767848635017.png" loading="lazy">
+            <p>uploaded_image_1767848635017.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767848191372.png" loading="lazy">
+            <p>uploaded_image_1767848191372.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767847834512.png" loading="lazy">
+            <p>uploaded_image_1767847834512.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767847081564.png" loading="lazy">
+            <p>uploaded_image_1767847081564.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767846845031.png" loading="lazy">
+            <p>uploaded_image_1767846845031.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767846342731.png" loading="lazy">
+            <p>uploaded_image_1767846342731.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767846165219.png" loading="lazy">
+            <p>uploaded_image_1767846165219.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767845848518.png" loading="lazy">
+            <p>uploaded_image_1767845848518.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767845426850.png" loading="lazy">
+            <p>uploaded_image_1767845426850.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767844959455.png" loading="lazy">
+            <p>uploaded_image_1767844959455.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767844838603.png" loading="lazy">
+            <p>uploaded_image_1767844838603.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767844772928.png" loading="lazy">
+            <p>uploaded_image_1767844772928.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767844214763.png" loading="lazy">
+            <p>uploaded_image_1767844214763.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767844069755.png" loading="lazy">
+            <p>uploaded_image_1767844069755.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767789703476.png" loading="lazy">
+            <p>uploaded_image_1767789703476.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767789174279.png" loading="lazy">
+            <p>uploaded_image_1767789174279.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1767853588945.png" loading="lazy">
+            <p>uploaded_image_0_1767853588945.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1767853347010.png" loading="lazy">
+            <p>uploaded_image_0_1767853347010.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1767850696764.png" loading="lazy">
+            <p>uploaded_image_0_1767850696764.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769375940645.png" loading="lazy">
+            <p>uploaded_image_1769375940645.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769375784459.png" loading="lazy">
+            <p>uploaded_image_1769375784459.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1769360043366.png" loading="lazy">
+            <p>uploaded_image_1769360043366.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/checkout_summary_amarelacore_1769377347509.png" loading="lazy">
+            <p>checkout_summary_amarelacore_1769377347509.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/windows_top_section_1772328768923.png" loading="lazy">
+            <p>windows_top_section_1772328768923.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/windows_testimonials_section_1772328849671.png" loading="lazy">
+            <p>windows_testimonials_section_1772328849671.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/windows_middle_section_1772328812114.png" loading="lazy">
+            <p>windows_middle_section_1772328812114.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_top_section_1772223249997.png" loading="lazy">
+            <p>tai_chi_top_section_1772223249997.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_testimonials_section_1772223424408.png" loading="lazy">
+            <p>tai_chi_testimonials_section_1772223424408.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_middle_section_1772223289771.png" loading="lazy">
+            <p>tai_chi_middle_section_1772223289771.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_features_section_1772223349152.png" loading="lazy">
+            <p>tai_chi_features_section_1772223349152.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767013268361.png" loading="lazy">
+            <p>uploaded_image_1767013268361.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767009375208.png" loading="lazy">
+            <p>uploaded_image_1767009375208.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767008216912.png" loading="lazy">
+            <p>uploaded_image_1767008216912.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765554271741.png" loading="lazy">
+            <p>uploaded_image_1765554271741.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767072898790.png" loading="lazy">
+            <p>uploaded_image_1767072898790.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767072584455.png" loading="lazy">
+            <p>uploaded_image_1767072584455.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767071920065.png" loading="lazy">
+            <p>uploaded_image_1767071920065.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/root_page_english_1767078206888.png" loading="lazy">
+            <p>root_page_english_1767078206888.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/deployed_site_white_1767072006075.png" loading="lazy">
+            <p>deployed_site_white_1767072006075.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_solucao_section_1772568195018.png" loading="lazy">
+            <p>lumiview_solucao_section_1772568195018.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_prova_social_lifestyle_1772567683552.png" loading="lazy">
+            <p>lumiview_prova_social_lifestyle_1772567683552.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_prova_social_cards_1772567787797.png" loading="lazy">
+            <p>lumiview_prova_social_cards_1772567787797.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_problema_section_1772568060895.png" loading="lazy">
+            <p>lumiview_problema_section_1772568060895.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_oferta_garantia_section_1772568367281.png" loading="lazy">
+            <p>lumiview_oferta_garantia_section_1772568367281.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_lifestyle_and_ps_cta_1772568526759.png" loading="lazy">
+            <p>lumiview_lifestyle_and_ps_cta_1772568526759.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_lifestyle_1772567194219.png" loading="lazy">
+            <p>lumiview_lifestyle_1772567194219.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_hero_section_1772567568434.png" loading="lazy">
+            <p>lumiview_hero_section_1772567568434.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_hero_product_1772567180240.png" loading="lazy">
+            <p>lumiview_hero_product_1772567180240.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_comparison_1772567210210.png" loading="lazy">
+            <p>lumiview_comparison_1772567210210.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_beneficios_section_main_1772568662166.png" loading="lazy">
+            <p>lumiview_beneficios_section_main_1772568662166.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_avatar3_1772567271436.png" loading="lazy">
+            <p>lumiview_avatar3_1772567271436.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_avatar2_1772567256779.png" loading="lazy">
+            <p>lumiview_avatar2_1772567256779.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_avatar1_1772567242573.png" loading="lazy">
+            <p>lumiview_avatar1_1772567242573.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771974736851.png" loading="lazy">
+            <p>uploaded_image_1771974736851.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766584573726.png" loading="lazy">
+            <p>uploaded_image_1766584573726.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766584193605.png" loading="lazy">
+            <p>uploaded_image_1766584193605.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766583921512.png" loading="lazy">
+            <p>uploaded_image_1766583921512.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766582948820.png" loading="lazy">
+            <p>uploaded_image_1766582948820.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766582605331.png" loading="lazy">
+            <p>uploaded_image_1766582605331.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766582436832.png" loading="lazy">
+            <p>uploaded_image_1766582436832.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766582137463.png" loading="lazy">
+            <p>uploaded_image_1766582137463.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766582060569.png" loading="lazy">
+            <p>uploaded_image_1766582060569.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766581936856.png" loading="lazy">
+            <p>uploaded_image_1766581936856.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766581604041.png" loading="lazy">
+            <p>uploaded_image_1766581604041.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766580558120.png" loading="lazy">
+            <p>uploaded_image_1766580558120.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767943668075.png" loading="lazy">
+            <p>uploaded_image_1767943668075.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767943122864.png" loading="lazy">
+            <p>uploaded_image_1767943122864.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767885880987.png" loading="lazy">
+            <p>uploaded_image_1767885880987.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767885717550.png" loading="lazy">
+            <p>uploaded_image_1767885717550.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767885144154.png" loading="lazy">
+            <p>uploaded_image_1767885144154.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1766819499055.png" loading="lazy">
+            <p>uploaded_image_1_1766819499055.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766823565259.png" loading="lazy">
+            <p>uploaded_image_1766823565259.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766823259047.png" loading="lazy">
+            <p>uploaded_image_1766823259047.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766821986778.png" loading="lazy">
+            <p>uploaded_image_1766821986778.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766821676826.png" loading="lazy">
+            <p>uploaded_image_1766821676826.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766821348571.png" loading="lazy">
+            <p>uploaded_image_1766821348571.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766821247321.png" loading="lazy">
+            <p>uploaded_image_1766821247321.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766821025023.png" loading="lazy">
+            <p>uploaded_image_1766821025023.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766820690816.png" loading="lazy">
+            <p>uploaded_image_1766820690816.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766820659589.png" loading="lazy">
+            <p>uploaded_image_1766820659589.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766820168682.png" loading="lazy">
+            <p>uploaded_image_1766820168682.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766819886402.png" loading="lazy">
+            <p>uploaded_image_1766819886402.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1766818489469.png" loading="lazy">
+            <p>uploaded_image_1766818489469.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1766821571948.png" loading="lazy">
+            <p>uploaded_image_0_1766821571948.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1766819499055.png" loading="lazy">
+            <p>uploaded_image_0_1766819499055.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/tai_chi_page_home_1772597950033.png" loading="lazy">
+            <p>tai_chi_page_home_1772597950033.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/book_teste_home_1772597820267.png" loading="lazy">
+            <p>book_teste_home_1772597820267.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765578977938.png" loading="lazy">
+            <p>uploaded_image_1765578977938.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765578746698.png" loading="lazy">
+            <p>uploaded_image_1765578746698.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771979057089.png" loading="lazy">
+            <p>uploaded_image_1771979057089.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771978173095.png" loading="lazy">
+            <p>uploaded_image_1771978173095.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1771976060231.png" loading="lazy">
+            <p>uploaded_image_1771976060231.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/project_visualization_1771975285438.png" loading="lazy">
+            <p>project_visualization_1771975285438.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/final_checkout_verification_1771978467272.png" loading="lazy">
+            <p>final_checkout_verification_1771978467272.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/checkout_verification_1771978348141.png" loading="lazy">
+            <p>checkout_verification_1771978348141.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/camping_tent_confirmation_1771978242661.png" loading="lazy">
+            <p>camping_tent_confirmation_1771978242661.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1764996868217.png" loading="lazy">
+            <p>uploaded_image_1_1764996868217.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765063038468.png" loading="lazy">
+            <p>uploaded_image_1765063038468.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765062960933.png" loading="lazy">
+            <p>uploaded_image_1765062960933.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765062700919.png" loading="lazy">
+            <p>uploaded_image_1765062700919.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765062249935.png" loading="lazy">
+            <p>uploaded_image_1765062249935.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765062051618.png" loading="lazy">
+            <p>uploaded_image_1765062051618.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1765061977179.png" loading="lazy">
+            <p>uploaded_image_1765061977179.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764998733086.png" loading="lazy">
+            <p>uploaded_image_1764998733086.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764998445495.png" loading="lazy">
+            <p>uploaded_image_1764998445495.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764998284424.png" loading="lazy">
+            <p>uploaded_image_1764998284424.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764998211353.png" loading="lazy">
+            <p>uploaded_image_1764998211353.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764998091042.png" loading="lazy">
+            <p>uploaded_image_1764998091042.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997800344.png" loading="lazy">
+            <p>uploaded_image_1764997800344.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997604667.png" loading="lazy">
+            <p>uploaded_image_1764997604667.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997556893.png" loading="lazy">
+            <p>uploaded_image_1764997556893.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997490668.png" loading="lazy">
+            <p>uploaded_image_1764997490668.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997445491.png" loading="lazy">
+            <p>uploaded_image_1764997445491.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997349316.png" loading="lazy">
+            <p>uploaded_image_1764997349316.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997145312.png" loading="lazy">
+            <p>uploaded_image_1764997145312.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764997080109.png" loading="lazy">
+            <p>uploaded_image_1764997080109.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764996315050.png" loading="lazy">
+            <p>uploaded_image_1764996315050.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764995870941.png" loading="lazy">
+            <p>uploaded_image_1764995870941.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764995273347.png" loading="lazy">
+            <p>uploaded_image_1764995273347.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1764994957170.png" loading="lazy">
+            <p>uploaded_image_1764994957170.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1764996868217.png" loading="lazy">
+            <p>uploaded_image_0_1764996868217.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772698359147.png" loading="lazy">
+            <p>uploaded_image_1772698359147.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772698076210.png" loading="lazy">
+            <p>uploaded_image_1772698076210.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772697795175.png" loading="lazy">
+            <p>uploaded_image_1772697795175.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772697783421.png" loading="lazy">
+            <p>uploaded_image_1772697783421.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772695390372.png" loading="lazy">
+            <p>uploaded_image_1772695390372.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772695381127.png" loading="lazy">
+            <p>uploaded_image_1772695381127.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772695354530.png" loading="lazy">
+            <p>uploaded_image_1772695354530.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772694939001.png" loading="lazy">
+            <p>uploaded_image_1772694939001.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772694744968.png" loading="lazy">
+            <p>uploaded_image_1772694744968.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772694572859.png" loading="lazy">
+            <p>uploaded_image_1772694572859.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772692395382.png" loading="lazy">
+            <p>uploaded_image_1772692395382.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772691210474.png" loading="lazy">
+            <p>uploaded_image_1772691210474.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/seguro_ssl_badge_1772698602790.png" loading="lazy">
+            <p>seguro_ssl_badge_1772698602790.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1768502025682.png" loading="lazy">
+            <p>uploaded_image_1_1768502025682.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768610478897.png" loading="lazy">
+            <p>uploaded_image_1768610478897.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768609982286.png" loading="lazy">
+            <p>uploaded_image_1768609982286.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768588850807.png" loading="lazy">
+            <p>uploaded_image_1768588850807.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768584378823.png" loading="lazy">
+            <p>uploaded_image_1768584378823.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768584312537.png" loading="lazy">
+            <p>uploaded_image_1768584312537.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768583180363.png" loading="lazy">
+            <p>uploaded_image_1768583180363.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768501666400.png" loading="lazy">
+            <p>uploaded_image_1768501666400.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1768502025682.png" loading="lazy">
+            <p>uploaded_image_0_1768502025682.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767875201132.png" loading="lazy">
+            <p>uploaded_image_1767875201132.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767875078130.png" loading="lazy">
+            <p>uploaded_image_1767875078130.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767874510321.png" loading="lazy">
+            <p>uploaded_image_1767874510321.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767874394804.png" loading="lazy">
+            <p>uploaded_image_1767874394804.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767873691429.png" loading="lazy">
+            <p>uploaded_image_1767873691429.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1767863295843.png" loading="lazy">
+            <p>uploaded_image_1767863295843.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/azul_page_load_check_1767875133347.png" loading="lazy">
+            <p>azul_page_load_check_1767875133347.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/primebox_blank_page_1768138068963.png" loading="lazy">
+            <p>primebox_blank_page_1768138068963.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/primebox_blank_final_check_1768140435022.png" loading="lazy">
+            <p>primebox_blank_final_check_1768140435022.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/blank_page_check_1768136554137.png" loading="lazy">
+            <p>blank_page_check_1768136554137.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_2_1766579066943.png" loading="lazy">
+            <p>uploaded_image_2_1766579066943.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1766579066943.png" loading="lazy">
+            <p>uploaded_image_1_1766579066943.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1766579066943.png" loading="lazy">
+            <p>uploaded_image_0_1766579066943.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1_1772688071851.png" loading="lazy">
+            <p>uploaded_image_1_1772688071851.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1772687608336.png" loading="lazy">
+            <p>uploaded_image_1772687608336.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_0_1772688071851.png" loading="lazy">
+            <p>uploaded_image_0_1772688071851.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/lumiview_new_feature_1772688113618.png" loading="lazy">
+            <p>lumiview_new_feature_1772688113618.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/usa_page_loaded_1768851145913.png" loading="lazy">
+            <p>usa_page_loaded_1768851145913.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768848576305.png" loading="lazy">
+            <p>uploaded_image_1768848576305.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768847209788.png" loading="lazy">
+            <p>uploaded_image_1768847209788.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768846376544.png" loading="lazy">
+            <p>uploaded_image_1768846376544.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768844131095.png" loading="lazy">
+            <p>uploaded_image_1768844131095.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768843627896.png" loading="lazy">
+            <p>uploaded_image_1768843627896.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/uploaded_image_1768843576304.png" loading="lazy">
+            <p>uploaded_image_1768843576304.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/successful_checkout_page_1768851680928.png" loading="lazy">
+            <p>successful_checkout_page_1768851680928.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/localhost_usa_blank_1768850767281.png" loading="lazy">
+            <p>localhost_usa_blank_1768850767281.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/localhost_home_blank_1768850743405.png" loading="lazy">
+            <p>localhost_home_blank_1768850743405.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/home_page_loaded_1768851131583.png" loading="lazy">
+            <p>home_page_loaded_1768851131583.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/checkout_verification_1768854083566.png" loading="lazy">
+            <p>checkout_verification_1768854083566.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/checkout_error_cannot_find_variant_1768851393936.png" loading="lazy">
+            <p>checkout_error_cannot_find_variant_1768851393936.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/amarela_product_page_1768851304229.png" loading="lazy">
+            <p>amarela_product_page_1768851304229.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/pricing_section_full_1772716407547.png" loading="lazy">
+            <p>pricing_section_full_1772716407547.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/pricing_scroll_1_1772716547056.png" loading="lazy">
+            <p>pricing_scroll_1_1772716547056.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/new_problem_image_inspired_1772720340260.png" loading="lazy">
+            <p>new_problem_image_inspired_1772720340260.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772720252015.png" loading="lazy">
+            <p>media__1772720252015.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772715626180.png" loading="lazy">
+            <p>media__1772715626180.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772715626155.png" loading="lazy">
+            <p>media__1772715626155.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772715168416.png" loading="lazy">
+            <p>media__1772715168416.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/media__1772701092102.png" loading="lazy">
+            <p>media__1772701092102.png</p>
+        </div>
+    
+        <div class="gallery-item generated">
+            <img src="../imagens-geradas/full_page_footer_verified_1772700848487.png" loading="lazy">
+            <p>full_page_footer_verified_1772700848487.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/footer_verification_1772701446742.png" loading="lazy">
+            <p>footer_verification_1772701446742.png</p>
+        </div>
+    
+        <div class="gallery-item other">
+            <img src="../imagens-geradas/final_pricing_verification_1772716628321.png" loading="lazy">
+            <p>final_pricing_verification_1772716628321.png</p>
+        </div>
+    
+    </div>
+    <script>
+        function filter(type) {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (type === 'all') {
+                    item.style.display = 'block';
+                } else if (type === 'generated') {
+                    if (item.classList.contains('generated')) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+        // Default to generated
+        filter('generated');
+    </script>
+</body>
+</html>
